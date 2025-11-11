@@ -309,106 +309,117 @@ body {
     transform: scale(1.05);
 }
 
-
+/* === Responsif untuk HP (max-width: 768px) === */
 @media (max-width: 768px) {
-    .container-header {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 0 10px;
-    }
 
-    .header, .navbar {
-        margin: 10px 0;
-        font-size: 20px;
-        padding: 1rem;
-    }
+  /* ======= HEADER & NAVBAR ======= */
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 10px 0;
+  }
 
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+  .header {
+    font-size: 20px;
+    margin: 0;
+    padding: 0.8rem 1.2rem;
+  }
 
-    .container, .container-manfaat {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
-    }
+  .navbar {
+    margin: 0;
+    padding: 0.8rem 1rem;
+  }
 
-    .text-konten h3,
-    .text-konten .Deskripsi,
-    .text-manfaat h3,
-    .text-manfaat .Deskripsi-manfaat {
-        margin-left: 0;
-    }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+  }
 
-    .image-container img,
-    .image-manfaat img {
-        max-width: 100%;
-        height: auto;
-    }
+  .navbar ul li a {
+    font-size: 16px;
+  }
 
-    .macam, .macam1, .macam2, .macam3 {
-        flex-direction: column;
-        width: 95%;
-    }
+  /* ======= BAGIAN UTAMA ======= */
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
 
-    .container-macam2 img {
-        width: 100%;
-        height: auto;
-    }
-
-    .card-anggota {
-        width: 150px;
-    }
-
-    .judul-macam h3 {
-        font-size: 32px;
-    }
-
-    .judul-anggota h2 {
-        font-size: 28px;
-    }
-}
-
-
-@media (max-width: 768px) {
-  .judul-anggota h2 {
+  .text-konten h3 {
     font-size: 28px;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+  }
+
+  .text-konten .Deskripsi {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .image-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* ======= MACAM ======= */
+  .macam, .macam1, .macam2, .macam3 {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+
+  .container-macam2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ======= MANFAAT ======= */
+  .container-manfaat {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-manfaat h3 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .Deskripsi-manfaat {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  /* ======= ANGGOTA ======= */
+  .judul-anggota h2 {
+    font-size: 26px;
   }
 
   .container-anggota {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    gap: 20px;
+    gap: 15px;
   }
 
   .card-anggota {
-    width: 80%;
-    max-width: 300px;
-  }
-
-  .card-anggota img {
-    height: 200px;
-  }
-
-  .card-anggota p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .card-anggota {
-    width: 180px;
+    width: 85%;
+    max-width: 320px;
   }
 
   .card-anggota img {
     height: 220px;
   }
-
-  .card-anggota p {
-    font-size: 17px;
-  }
 }
+
+
