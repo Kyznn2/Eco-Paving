@@ -1,0 +1,306 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f2ed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+    line-height: 1.6;
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* kiri-kanan */
+    align-items: center;
+}
+
+.header {
+    background-color: #f8f2ed;
+    border-radius: 50px;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 100px; 
+    margin-top: 30px;
+    color: black;
+}
+
+.navbar {
+    background-color: #f8f2ed;
+    border-radius: 50px;
+    padding: 1.7rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #D9B79A;
+    transition: 0.3s ease;
+}
+
+.container { 
+    display: flex; 
+    align-items: center;
+    gap: 5vh;
+    flex-wrap: wrap;
+    max-width: auto;
+    margin: 10px auto; 
+    background-color: #f8f2ed; 
+    padding: 40px 60px;
+}
+
+.text-konten {
+    flex: 1;
+    padding-right: 0px;
+}
+
+.text-konten .Deskripsi {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.image-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.text-konten h3 {
+    font-size: 45px;
+    line-height: 1.1;
+    padding-bottom: 50px;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+.text-konten {
+    font-size: 16px;
+    line-height: 1.8; 
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.judul-macam {
+    text-align: center;
+    margin-bottom:0;
+    background-color: #8bcb9f;
+    border-radius: 30px 30px 0 0;
+    padding: 40px 0;
+}
+
+.judul-macam h3 {
+    font-size: 42px;
+    font-weight: 900;
+    margin: 0;
+    color: #444444;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-macam2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;          
+    gap: 20px;                
+    padding: 70px 20px;
+    width: 100%;
+    min-height: auto;       
+    box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
+    background: linear-gradient(to bottom, #8bcb9f, #f8f2ed);
+}
+
+.macam, .macam1, .macam2, .macam3 {
+    background-color: whitesmoke;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.container-macam2 img {
+    width: 45%;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.macam .isi, .macam1 .isi1, .macam2 .isi2, .macam3 .isi3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #111;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.macam p, .macam1 p, .macam2 p, .macam3 p {
+    font-size: 22px;
+    line-height: 1.4;   
+    margin: 2px 0;      
+}
+
+.isi-deskeripsi, .isi1-deskeripsi1, .isi2-deskeripsi, .isi3-deskeripsi {
+    max-width: 100%;
+}
+
+/* ubah urutan untuk macam1 dan macam3 agar gambar di kiri */
+.macam1, .macam3 {
+    flex-direction: row-reverse;
+}
+
+.macam:hover,
+.macam1:hover,
+.macam2:hover,
+.macam3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.container-manfaat { 
+    display: flex; 
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    max-width: auto;
+    margin: 0; 
+    background-color: #f8f2ed; 
+    padding: 40px 60px;
+    background: linear-gradient(to bottom, #f8f2ed, #8bcb9f);
+}
+
+.text-manfaat {
+    flex: 1;
+    padding-right: 0px;
+}
+
+.text-manfaat .Deskripsi-manfaat {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.image-manfaat {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.text-manfaat h3 {
+    font-size: 48px;
+    line-height: 1.1;
+    padding-bottom: 50px;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+.text-manfaat {
+    line-height: 1.8; 
+    margin-bottom: 200px;
+}
+
+.image-manfaat img {
+    margin: auto;
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.judul-anggota {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px 0;
+  background-color: #8bcb9f;
+}
+
+.judul-anggota h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+
+.container-anggota {
+  display: flex;
+  margin: 0;
+  justify-content: center;  
+  align-items: flex-start;
+  flex-wrap: nowrap;        
+  gap: 30px;                         /* kalau layar kecil, bisa di-scroll ke samping */
+  padding: 20px 40px;
+  background-color: #8bcb9f;
+}
+
+/* === Card Style === */
+.card-anggota {
+  text-align: center;
+  width: 200px;
+  flex-shrink: 0;           /* agar tidak mengecil */
+  border-radius: 12px;
+  background-color:white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-top: 6px solid #D9B79A;
+}
+
+.card-anggota:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card-anggota img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  filter: blur(1.5px);
+  transition: filter 0.3s ease
+}
+
+.card-anggota p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.card-anggota:hover img {
+    filter: blur(0);
+    transform: scale(1.05);
+}
