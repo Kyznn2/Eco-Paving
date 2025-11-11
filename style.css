@@ -16,6 +16,8 @@ body {
     display: flex;
     justify-content: space-between; /* kiri-kanan */
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
 }
 
 .header {
@@ -43,6 +45,8 @@ body {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar ul li a {
@@ -303,4 +307,108 @@ body {
 .card-anggota:hover img {
     filter: blur(0);
     transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .header, .navbar {
+        margin: 10px 0;
+        font-size: 20px;
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container, .container-manfaat {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .text-konten h3,
+    .text-konten .Deskripsi,
+    .text-manfaat h3,
+    .text-manfaat .Deskripsi-manfaat {
+        margin-left: 0;
+    }
+
+    .image-container img,
+    .image-manfaat img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .macam, .macam1, .macam2, .macam3 {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .container-macam2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-anggota {
+        width: 150px;
+    }
+
+    .judul-macam h3 {
+        font-size: 32px;
+    }
+
+    .judul-anggota h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .judul-anggota h2 {
+    font-size: 28px;
+  }
+
+  .container-anggota {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card-anggota {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .card-anggota img {
+    height: 200px;
+  }
+
+  .card-anggota p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .card-anggota {
+    width: 180px;
+  }
+
+  .card-anggota img {
+    height: 220px;
+  }
+
+  .card-anggota p {
+    font-size: 17px;
+  }
 }
