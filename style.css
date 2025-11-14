@@ -151,6 +151,7 @@ body {
     justify-content: space-between;
     gap: 30px;
     flex-wrap: nowrap;
+    transition: all 0.3s ease;
 }
 
 .container-macam2 img {
@@ -187,10 +188,9 @@ body {
 .macam1:hover,
 .macam2:hover,
 .macam3:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     background-color: white;
-    transition: all 0.3s ease;
 }
 /* Selesai-Macam2 */
 
@@ -307,7 +307,8 @@ body {
 
 .card-anggota:hover img {
     filter: blur(0);
-    transform: scale(1.05);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 /* Selesai card-anggota */
 
@@ -406,7 +407,7 @@ body {
 }
 
 /* === Responsif  (max-width: 1400px) === */
-@media (max-width: 1400px){
+@media (max-width: 1455px){
       /* ======= ANGGOTA ======= */
 .judul-anggota h2 {
     font-size: 26px;
